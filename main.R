@@ -766,25 +766,3 @@ cluster2_words <- ggplot(word_count_cluster_2[1:40, ], aes(
 
 cluster1_words / cluster2_words +
    plot_annotation(title = "40 most common lyrics, by cluster")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# For each useage of PCs 1 to 6, look at the clustering results.
-
-# Compare how each model puts the data into their clusters, measure % comparison
-
-# Don't go into too much detail in assignment - ARI
