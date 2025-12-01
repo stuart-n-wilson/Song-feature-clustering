@@ -14,8 +14,16 @@ The [MusicOSet](https://marianaossilva.github.io/DSW2019/index.html) dataset con
 Ensure that the files downloaded from the 'musicoset_songfeatures.zip' folder and contain within the working directory of the R project. The 'main.R' file then contains the full script, broken up into sections with descriptive subtitles.
 
 ## Results
-## Clustering
+### Clustering
+<img width="1091" height="758" alt="14_song_feature_2_cluster" src="https://github.com/user-attachments/assets/64f4b3be-8858-4a7b-b23a-d8cf484e2865" />
 The Billboard Top 100 songs from this time period are most optimally separated into two groups - high energy, danceable songs, and more relaxed, acoustic songs.
+<img width="1091" height="758" alt="16b_numeric_feature_distribution_density" src="https://github.com/user-attachments/assets/0718e592-15a1-408d-bb1b-bd6a8a1fe59c" />
 
-## Lyrics
+
+
+### Lyrics
+<img width="1091" height="758" alt="40_most_common_lyrics_billboard_top100" src="https://github.com/user-attachments/assets/289cfa72-e6a2-410e-a42d-26c4ea677b99" />
 The most frequent meaningful lyric is 'love' (or a related word, such as loving, lover). This is true for both the high energy songs and the acoustic ones.
+<img width="1091" height="758" alt="19_lyric_cluster_comparison" src="https://github.com/user-attachments/assets/46acac80-2d87-4513-aab9-396fa7fbe4de" />
+
+
