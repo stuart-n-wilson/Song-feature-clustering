@@ -1,47 +1,94 @@
 # <img width="32" height="32" alt="image" src="https://github.com/user-attachments/assets/cf5c4d70-733c-42d3-8949-dc00db480040" /> Pop song feature clustering <img width="32" height="32" alt="image" src="https://github.com/user-attachments/assets/673026e0-091c-4aaf-9a09-dca867dedc7d" />
 
-This project uses machine learning techniques to cluster Billboard Top 100 songs into 2 groups (high energy, danceable songs, and more relaxed, acoustic songs), and then uses text mining methods to find the most frequent lyrics overall, and from within each cluster.
+### Machine learning & text mining on 50+ years of Billboard Top 100 songs
 
-## Introduction
-Many music streaming services like Spotify and Apple Music utilise song reccomendation algorithms - machine learning techniques act as the backbone of these systems. This project focuses on the use of k-means clustering as a method to group similar Billboard Top 100 songs by their features, such as acousticness, energy and danceability. This project also makes use of text mining techniques on the lyrics, to see which (meaningful) lyrics are most frequent in these pop songs, as lyric analysis can also be used in reccomendation systems.
+This project uses **k-means clustering**, **PCA**, and **lyric text mining** to explore patterns in Billboard Top 100 songs from 1962–2018. It identifies two dominant song groups—**high-energy/danceable** and **acoustic/relaxed**—and visualises their musical and lyrical characteristics.
 
-### Research questions
-1. What is the optimal number of clusters when clustering popular songs?
+---
+
+# 📑 Table of Contents
+- [Overview](#overview)  
+- [Dataset](#dataset)  
+- [Quick Start](#quick-start)  
+- [Project Structure](#project-structure)  
+- [Methodology Summary](#methodology-summary)  
+- [Results](#results)  
+  - [Clustering](#clustering)  
+  - [Lyrics](#lyrics)  
+- [Key Findings](#key-findings)  
+- [Future Work](#future-work)  
+
+---
+
+## Overview
+- Clusters Billboard Top 100 songs using **k-means**
+- Uses **PCA** to understand feature structure  
+- Evaluates optimal k (elbow + silhouette methods)  
+- Performs **lyric text mining** and word frequency analysis  
+- Produces numerous visualisations for features and lyrics  
+- All results reproducible in R
+
+---
+
+## Research Questions
+This project aims to answer the following:
+
+1. What is the optimal number of clusters when grouping popular songs?
 2. What are the song features within each cluster?
 3. What are the most frequent lyrics within each cluster?
 
-## Instructions 
+
+---
+
+## Project Structure
+
+```
+├── main.R                         # Reproduces core results
+├── exploratory_data_analysis.R    # Correlations, feature plots
+├── pca_and_optimal_k.R            # PCA + k selection
+├── k_means_model.R                # K-means modelling
+├── cluster_feature_analysis.R     # Interpreting cluster features
+├── lyric_text_mining.R            # Lyric text mining + wordclouds
+```
+---
+
+## Methodology summary
+
+---
+
+## Quick start
 ### Dataset
-The [MusicOSet](https://marianaossilva.github.io/DSW2019/index.html) dataset contains data on Billboard Top 100 songs from 1962 to 2018. This project uses the 'musicoset_songfeatures.zip' files that contain the songs along with their attributes and lyrics.
+🔗 The [MusicOSet](https://marianaossilva.github.io/DSW2019/index.html) dataset contains data on Billboard Top 100 songs from 1962 to 2018.
+
+Extract `musicoset_songfeatures.zip` into your project directory.
 ### Running the project
 1. Extract the files from the zip folder into the working directory for the R project.
 2. Install necessary packages - for each ```library(LIBRARY_NAME)```, type ```install.packages("LIBRARY_NAME")``` to install that package e.g. for ```library(tidyverse)```, first run the line ```install.packages("tidyverse")```.
 3. To obtain the main results for the project, use [```main.R```](https://github.com/stuart-n-wilson/Song-feature-clustering/blob/main/main.R). This file contains a (**very**) stripped down version of the key steps and will run in full to provide the main results (ensure to run the file in line order!).
 4. For greater detail into the methodology, used the steps below.
 
-### Additional R files
-As above, to obtain the main results from the project, run the [```main.R```](https://github.com/stuart-n-wilson/Song-feature-clustering/blob/main/main.R) file. This file is a highly stripped down combination of the other files.
-
-For much greater detail into the methodology, use the remaining R files. Each file is written to run independently.
-
-1. [```exploratory_data_analysis.R```](https://github.com/stuart-n-wilson/Song-feature-clustering/blob/main/exploratory_data_analysis.R) - this script contains feature visualisations, a correlation matrix and some scatterplots for the song features to provide more insight into the general exploratory analysis conducted.
-2. [```pca_and_optimal_k.R```](https://github.com/stuart-n-wilson/Song-feature-clustering/blob/main/pca_and_optimal_k.R) - this script gives detail into principal component analysis, and calculating the optimal number of principal components to use, as well as the calculating the optimal number of clusters for the songs.
-3. [```k_means_model.R```](https://github.com/stuart-n-wilson/Song-feature-clustering/blob/main/k_means_model.R) - this script creates the k-means model and analyses its performance for varying values of k. This includes silhouette and elbow plots.
-4. [```cluster_feature_analysis.R```](https://github.com/stuart-n-wilson/Song-feature-clustering/blob/main/cluster_feature_analysis.R) - this script runs the k-means algorithm and then analyses the clusters for both the numeric features and the categorical ones.
-5. [```lyric_text_mining```](https://github.com/stuart-n-wilson/Song-feature-clustering/blob/main/lyric_text_mining.R) - this script contains the full lyric text mining methods, and then creates wordclouds for the most frequent lyrics.
-
+---
 
 ## Results
 ### Clustering
-<img width="1091" height="758" alt="14_song_feature_2_cluster" src="https://github.com/user-attachments/assets/64f4b3be-8858-4a7b-b23a-d8cf484e2865" />
-The Billboard Top 100 songs from this time period are most optimally separated into two groups - high energy, danceable songs, and more relaxed, acoustic songs.
-<img width="1091" height="758" alt="16b_numeric_feature_distribution_density" src="https://github.com/user-attachments/assets/0718e592-15a1-408d-bb1b-bd6a8a1fe59c" />
-
-
+The Billboard Top 100 songs from this time period are most optimally separated into two groups - high energy, danceable songs, and more relaxed, acoustic songs. This defined separation would aid a song recommendation system with the two types of Billboard Top 100 songs being grouped with similarly attributed songs.
+<p align="center">
+  <img width="500" src="https://github.com/user-attachments/assets/64f4b3be-8858-4a7b-b23a-d8cf484e2865" />
+  <img width="500" src="https://github.com/user-attachments/assets/0718e592-15a1-408d-bb1b-bd6a8a1fe59c" />
+</p>
 
 ### Lyrics
-<img width="1091" height="758" alt="40_most_common_lyrics_billboard_top100" src="https://github.com/user-attachments/assets/27ae993e-ffdf-4fca-9e07-0929acc1d175" />
-The most frequent meaningful lyric is 'love' (or a related word, such as loving, lover). This is true for both the high energy songs and the acoustic ones.
-<img width="1091" height="758" alt="19_lyric_cluster_comparison" src="https://github.com/user-attachments/assets/46acac80-2d87-4513-aab9-396fa7fbe4de" />
 
+The most frequent meaningful lyric is 'love' (including variants such as loving, lover). This is true for both the high energy songs and the acoustic ones. This matches up with existing research that says love is the most prominant theme in popular music in Billboard songs.
+<p align="center">
+  <img width="500" src="https://github.com/user-attachments/assets/27ae993e-ffdf-4fca-9e07-0929acc1d175" />
+  <img width="500" src="https://github.com/user-attachments/assets/46acac80-2d87-4513-aab9-396fa7fbe4de" />
+</p>
 
+---
+
+## Key findings
+
+---
+
+## Future work
