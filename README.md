@@ -16,8 +16,17 @@ The [MusicOSet](https://marianaossilva.github.io/DSW2019/index.html) dataset con
 ### Running the project
 1. Extract the files from the zip folder into the working directory for the R project.
 2. Install necessary packages - for each ```library(LIBRARY_NAME)```, type ```install.packages("LIBRARY_NAME")``` to install that package e.g. for ```library(tidyverse)```, first run the line ```install.packages("tidyverse")```.
-3. To obtain the main results for the project, use 'main.R'. This file contains a stripped down version of each step and will run in full to provide the main results (ensure to run the file in line order!).
-4. For greater detail into the methodology, the remaining R scripts are written to run entirely independently of one another, with the full detailed steps and extra visualisations.
+3. To obtain the main results for the project, use 'main.R'. This file contains a (**very**) stripped down version of the key steps and will run in full to provide the main results (ensure to run the file in line order!).
+4. For greater detail into the methodology, used the steps below.
+
+### Additional R files
+As above, to obtain the main results from the project, run the 'main.R' file. This file is a highly stripped down combination of the other files.
+
+For much greater detail into the methodology, use the remaining R files. Each file is written to run independently.
+
+1. 'exploratory_data_analysis.R' - 
+2. 
+
 
 ## Results
 ### Clustering
