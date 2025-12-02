@@ -16,7 +16,7 @@ The [MusicOSet](https://marianaossilva.github.io/DSW2019/index.html) dataset con
 ### Running the project
 1. Extract the files from the zip folder into the working directory for the R project.
 2. Install necessary packages - for each ```library(LIBRARY_NAME)```, type ```install.packages("LIBRARY_NAME")``` to install that package e.g. for ```library(tidyverse)```, first run the line ```install.packages("tidyverse")```.
-3. Each R script is written to be run independently of the rest. For example, the 'lyric_text_mining.R' file is a full script to import the data, clean the text and create the lyric wordclouds. So just copy the code into R, and run it line by line, or in one go (but this will take some time!).
+3. Each R script is written to be run independently of the rest. For example, the 'lyric_text_mining.R' file is a full script to import the data, clean the text and create the lyric wordclouds. So just copy the code into R, and run it line by line, or in one go (but this will take some time!). (Alternatively, the 'main.R' file contains the entire project in one file, and can be run line by line, but must be **executed in order**!)
 
 ## Results
 ### Clustering
