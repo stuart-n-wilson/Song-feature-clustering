@@ -1,6 +1,9 @@
-# Song-feature-clustering
+# <img width="32" height="32" alt="image" src="https://github.com/user-attachments/assets/cf5c4d70-733c-42d3-8949-dc00db480040" /> Pop song feature clustering <img width="32" height="32" alt="image" src="https://github.com/user-attachments/assets/673026e0-091c-4aaf-9a09-dca867dedc7d" />
+
+This project using machine learning to cluster Billboard Top 100 songs into 2 groups, and then uses tech mining methods to find the most frequent lyrics.
+
 ## Introduction
-Many music streaming services like Spotify and Apple Music utilise song reccomendation algorithms - machine learning techniques act as the backbone of these systems. This project focuses on the use of k-means clustering as a method to group similar Billboard Top 100 songs by their features, such as acousticness, energy and danceability. Analysis was then conducted on the lyrics of these songs, to see which lyrics are most frequent in these pop songs as lyric analysis can also be used in reccomendation systems.
+Many music streaming services like Spotify and Apple Music utilise song reccomendation algorithms - machine learning techniques act as the backbone of these systems. This project focuses on the use of k-means clustering as a method to group similar Billboard Top 100 songs by their features, such as acousticness, energy and danceability. This project also makes use of text mining techniques on the lyrics, to see which (meaningful) lyrics are most frequent in these pop songs, as lyric analysis can also be used in reccomendation systems.
 
 ### Research questions
 1. What is the optimal number of clusters when clustering popular songs?
