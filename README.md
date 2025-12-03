@@ -68,10 +68,10 @@ This project aims to answer the following:
 
 Extract `musicoset_songfeatures.zip` into your project directory.
 ### Running the project
-1. Extract the files from the zip folder into the working directory for the R project.
+1. Ensure the files ```song_features.csv``` and ```lyrics.csv``` are in working directory.
 2. Install necessary packages - for each ```library(LIBRARY_NAME)```, type ```install.packages("LIBRARY_NAME")``` to install that package e.g. for ```library(tidyverse)```, first run the line ```install.packages("tidyverse")```.
 3. To obtain the main results for the project, use [```main.R```](https://github.com/stuart-n-wilson/Song-feature-clustering/blob/main/main.R). This file contains a (**very**) stripped down version of the key steps and will run in full to provide the main results (ensure to run the file in line order!).
-4. For greater detail into the methodology, used the steps below.
+4. For greater detail into the methodology, each other R file (see [Project Structure](#project-structure) provides full detailed methodology into each step, and contains many more accompanying visualisations.
 
 ---
 
