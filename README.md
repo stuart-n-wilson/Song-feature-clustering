@@ -6,7 +6,7 @@ This project uses **k-means clustering**, **PCA**, and **lyric text mining** to 
 
 ---
 
-# 📑 Table of Contents
+## Table of Contents
 - [Overview](#overview)  
 - [Dataset](#dataset)  
 - [Quick Start](#quick-start)  
