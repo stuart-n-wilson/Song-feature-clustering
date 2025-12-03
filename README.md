@@ -54,6 +54,12 @@ This project aims to answer the following:
 
 ## Methodology summary
 
+1. Exploratory data analysis (EDA) - feature distributions, correlations and scatterplots.
+2. Principal component analysis (PCA) - reduced dimensionality, calculate optimal k
+3. Clustering - Silhouette and elbow plots, confirmed k = 2
+4. Text mining - Cleaned, lemmatised and used frequency analysis on lyrics.
+5. Results - analysed features and lyrics from within each cluster.
+
 ---
 
 ## Quick start
@@ -88,7 +94,11 @@ The most frequent meaningful lyric is 'love' (including variants such as loving,
 ---
 
 ## Key findings
-
+- Pop songs naturally from **2 clusters**, primarily separated by acousticness, danceability and energy.
+- **Love** is the most frequent meaningful lyric across all pop songs and within each cluster.
+  
 ---
 
 ## Future work
+Combining feature analysis with lyric sentiment analysis to improve clustering performance.
+  
