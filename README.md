@@ -49,6 +49,7 @@ This project aims to answer the following:
 ├── k_means_model.R                # K-means modelling
 ├── cluster_feature_analysis.R     # Interpreting cluster features
 ├── lyric_text_mining.R            # Lyric text mining + wordclouds
+├── Visualisations                 # Folder contains all project visualisations, in order
 ```
 ---
 
