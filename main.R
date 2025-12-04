@@ -266,6 +266,7 @@ valence_density <- df_clusters_num |>
       loudness_density + tempo_density + valence_density) +
    theme(legend.position = "bottom") +
    plot_annotation("Numeric feature distribution, by cluster")
+
 # Categorical feature cluster analysis ------------------------------------
 
 df_clusters_cat <- df |>
@@ -290,6 +291,7 @@ ggplot(
       title = "Proportion of categorical features by cluster"
    ) +
    scale_fill_viridis_d()
+
 # Lyrics text mining ------------------------------------------------------
 
 # Pre-processing
@@ -339,6 +341,7 @@ words_df <- df_lyrics |>
    anti_join(stop_words, by = "word") |>
    filter(word %fin% GradyAugmented) |>
    filter(nchar(word) > 2)
+
 # Lyric visualisations ----------------------------------------------------
 
 # Top words for all songs
