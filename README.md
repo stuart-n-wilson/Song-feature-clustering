@@ -35,7 +35,7 @@ This project aims to answer the following:
 
 1. What is the optimal number of clusters when grouping popular songs?
 2. What are the song features within each cluster?
-3. What are the most frequent lyrics within each cluster?
+3. What are the most frequent meaningful lyrics within each cluster?
 
 
 ---
