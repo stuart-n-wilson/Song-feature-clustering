@@ -262,3 +262,25 @@ ggplot(df, aes(x = valence, y = danceability)) +
    geom_point(colour = "#440154FF") +
    theme_minimal() +
    labs(title = "Valence danceability correlation")
+
+# 2d density plots --------------------------------------------------------
+
+make_plot <- function(df, xvar, yvar, xlab, ylab) {
+   
+   corr <- round(cor(df[[xvar]], df[[yvar]]), 2)
+   
+   ggplot(df, aes_string(x = xvar, y = yvar)) +
+      geom_density_2d_filled(contour_var = "ndensity",
+                             show.legend = FALSE) +
+      
+      labs(x = xlab, y = ylab,
+           subtitle = paste("Correlation:", corr)) +
+      theme_minimal()
+}
+
+p1 <- make_plot(df, "loudness", "energy", "Loudness", "Energy")
+p2 <- make_plot(df, "acousticness", "energy", "Acousticness", "Energy")
+p3 <- make_plot(df, "acousticness", "loudness", "Acousticness", "Loudness")
+p4 <- make_plot(df, "valence", "danceability", "Valence", "Danceability")
+
+p1 + p2 + p3 + p4
