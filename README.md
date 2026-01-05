@@ -33,10 +33,9 @@ This project uses **k-means clustering**, **PCA**, and **lyric text mining** to 
 ## Research Questions
 This project aims to answer the following:
 
-1. What is the optimal number of clusters when grouping popular songs?
-2. What are the song features within each cluster?
-3. What are the most frequent meaningful lyrics within each cluster?
-
+1. How do Billboard Top 100 songs cluster when using multidimensional audio feature data?
+2. What musical characteristics are attributed to the clusters based on their defining acoustic features?
+3. What thematic patterns emerge from the most frequent significant terms in the lyrics of each cluster?
 
 ---
 
@@ -96,7 +95,7 @@ The most frequent meaningful lyric is 'love' (including variants such as loving,
 
 ## Key findings
 - Pop songs naturally from **2 clusters**, primarily separated by acousticness, danceability and energy.
-- **Love** is the most frequent meaningful lyric across all pop songs and within each cluster.
+- **Love** is the most common theme and lyric across all pop songs and within each cluster.
   
 ---
 
